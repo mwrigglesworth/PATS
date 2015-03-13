@@ -1,0 +1,54 @@
+#foobar
+{
+	width: 595px;
+	height: 400px;
+	position: relative;
+	margin-bottom:10px;
+}
+
+#foobar .navigation
+{
+	position: absolute;
+	display: block;
+	z-index: 100;
+	color: #ffffff;
+	bottom: 0px;
+	right: 0px;
+	margin-bottom: 5px;
+	padding: 10px;
+	background-color: #303030;
+}
+
+#foobar .navigation a
+{
+	color: #ffffff;
+	text-decoration: none;
+	outline: none;
+}
+
+#foobar .viewer
+{
+	width: 595px;
+	height: 400px;
+}
+
+#foobar .viewer .reel .slide
+{
+	position: relative;
+	width: 595px;
+	height: 400px;
+}
+
+#foobar .viewer .reel .slide span
+{
+    font-size: 10px;
+	position: absolute;
+	display: block;
+	width: 570px;
+	padding: 10px 20px 10px 5px; 
+	background-color: #404040;
+	color: #ffffff;
+	bottom: 0px;
+	left: 0px;
+	margin-bottom: 5px;
+}

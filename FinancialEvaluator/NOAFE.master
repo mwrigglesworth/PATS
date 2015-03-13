@@ -1,0 +1,24 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/PATS.master" AutoEventWireup="true" CodeFile="NOAFE.master.cs" Inherits="FinancialEvaluator_NOAFE" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+<asp:ScriptManager ID="ScriptManager1" runat="server">
+</asp:ScriptManager>
+<div id="LeftCol">
+    <asp:Label ID="LabelFEHeader" runat="server" Text=""></asp:Label>
+    <asp:Panel ID="PanelFullInfo" runat="server">
+    <div class='LeftColDivHeader'>FE Summary</div>
+    <div class='LeftColDiv'>
+        <asp:Label ID="LabelFEInfo" runat="server" Text=""></asp:Label><br /><br />
+    </div>
+    </asp:Panel>
+</div>
+<!-- end left col -->
+    <div id="MainCol">
+        <asp:ContentPlaceHolder id="ContentPlaceHolderControlPanel" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+</asp:Content>
+

@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/PATS.master" AutoEventWireup="true" CodeFile="GIPAPPatient.master.cs" Inherits="Patient_GIPAPPatient" %>
+<%@ Register assembly="iucon.web.Controls.PartialUpdatePanel" namespace="iucon.web.Controls" tagprefix="cc1" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+</asp:ScriptManager><% string choice;
+    try
+    {
+        choice = Request.QueryString["choice"].ToString();
+    }
+    catch
+    {
+        choice = "0";
+    }
+    iucon.web.Controls.Parameter mwParam = new iucon.web.Controls.Parameter("choice", choice);
+    PartialUpdatePanelHead.Parameters.Add(mwParam);         %>
+    <div id="LeftCol">
+        <cc1:partialupdatepanel ID="PartialUpdatePanelHead" runat="server" 
+            UserControlPath="Patient/GIPAPAsync/PatSummary.ascx">
+            <Parameters>
+                <cc1:Parameter Name="MyParameter" Value="Hello world" />
+            </Parameters>
+            <LoadingTemplate>
+                <div style="width: 100%; background-color: White">
+                    <img src="../Images/loading.gif" /></div>
+            </LoadingTemplate>
+            <ErrorTemplate>
+                Unable to load patient info.
+            </ErrorTemplate>
+        </cc1:partialupdatepanel>   
+        
+    </div>
+    <!-- end left col -->
+    <div id="MainCol">
+        <asp:ContentPlaceHolder id="ContentPlaceHolderControlPanel" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+</asp:Content>
+

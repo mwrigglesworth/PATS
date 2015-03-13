@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/PATS.master" AutoEventWireup="true" CodeFile="GIPAPCountry.master.cs" Inherits="Country_GIPAPCountry" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+<asp:ScriptManager ID="ScriptManager1" runat="server">
+</asp:ScriptManager>
+<div id="LeftCol">
+    <asp:Label ID="LabelCountryInfo" runat="server" Text=""></asp:Label>
+    <div class='LeftColDivHeader'>Country Summary</div>
+    <div class='LeftColDiv'>
+        <asp:Label ID="LabelCountrySummary" runat="server" Text=""></asp:Label>
+    </div>
+    <div class="LeftColSpacer"></div>
+     <div class='LeftColDivHeader'>Disease / Label Info</div>
+    <div class='LeftColDiv'>
+    <asp:UpdatePanel ID="UpdatePanel2" runat="server" UpdateMode="Conditional">
+                        <ContentTemplate>
+<asp:UpdateProgress ID="UpdateProgress2" runat="server" DisplayAfter="0" DynamicLayout="true" AssociatedUpdatePanelID="UpdatePanel2">
+        <ProgressTemplate><div style="width: 100%; background-color: White">
+                        <img src="../Images/loading.gif" /></div>            
+            </ProgressTemplate>
+             </asp:UpdateProgress>
+        <asp:DropDownList ID="DropDisease" runat="server" AutoPostBack="True" 
+                                onselectedindexchanged="DropDisease_SelectedIndexChanged">
+            <asp:ListItem>Country Program Info</asp:ListItem>
+            <asp:ListItem>CML</asp:ListItem>
+            <asp:ListItem>GIST</asp:ListItem>
+            <asp:ListItem>Adjuvant GIST</asp:ListItem>
+            <asp:ListItem>PH+ ALL</asp:ListItem>
+            <asp:ListItem>DFSP</asp:ListItem>
+            <asp:ListItem>MDS / MPD</asp:ListItem>
+            <asp:ListItem>Systemic Mastocytosis</asp:ListItem>
+            <asp:ListItem>HES / CEL</asp:ListItem>
+            <asp:ListItem>Tasigna</asp:ListItem>
+        </asp:DropDownList><br />
+        <asp:Label ID="LabelDisease" runat="server" Text=""></asp:Label>
+</ContentTemplate>
+</asp:UpdatePanel>
+    </div>
+</div>
+<!-- end left col -->
+    <div id="MainCol">
+        <asp:ContentPlaceHolder id="ContentPlaceHolderControlPanel" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+</asp:Content>
+

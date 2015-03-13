@@ -1,0 +1,23 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/PATS.master"  AutoEventWireup="true" CodeFile="Distributor.master.cs" Inherits="Distributor_DistributorMaster" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+<asp:ScriptManager ID="ScriptManager1" runat="server">
+</asp:ScriptManager>
+<div id="LeftCol">
+    <asp:Label ID="LabelDistributorHeader" runat="server" Text=""></asp:Label>
+    <asp:Panel ID="PanelFullInfo" runat="server">
+    <div class='LeftColDivHeader'>Distributor Summary</div>
+    <div class='LeftColDiv'>
+        <asp:Label ID="LabelDistributorInfo" runat="server" Text=""></asp:Label><br /><br />
+    </div>
+    </asp:Panel>
+</div>
+<!-- end left col -->
+    <div id="MainCol">
+        <asp:ContentPlaceHolder id="ContentPlaceHolderControlPanel" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+</asp:Content>

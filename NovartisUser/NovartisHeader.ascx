@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="NovartisHeader.ascx.cs" Inherits="NovartisUser_NovartisHeader" %>
+<div id="headerDiv" style="width:596px; height:71px; clear:both; background-image:url('../Images/ReportsHeader.png');"></div>

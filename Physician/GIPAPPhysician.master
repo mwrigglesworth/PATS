@@ -1,0 +1,27 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/PATS.master" AutoEventWireup="true" CodeFile="GIPAPPhysician.master.cs" Inherits="Physician_GIPAPPhysician" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+</asp:ScriptManager>
+<div id="LeftCol">
+    <asp:Label ID="LabelPhysInfo" runat="server" Text=""></asp:Label>
+    <asp:Panel ID="PanelFullInfo" runat="server">
+    <div class='LeftColDivHeader'>Physician Summary</div>
+    <div class='LeftColDiv'>
+        <asp:Label ID="LabelClinicsLeft" runat="server" Text=""></asp:Label><br /><br />
+        <asp:Label ID="LabelApproveLeft" runat="server" Text=""></asp:Label><br /><br />
+        <asp:Label ID="LabelNOALeft" runat="server" Text=""></asp:Label><br /><br />
+        <asp:Label ID="LabelMOULeft" runat="server" Text=""></asp:Label>
+    </div>
+    </asp:Panel>
+</div>
+<!-- end left col -->
+    <div id="MainCol">
+        <asp:ContentPlaceHolder id="ContentPlaceHolderControlPanel" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+</asp:Content>
+

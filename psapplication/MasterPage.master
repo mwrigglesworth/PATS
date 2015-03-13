@@ -1,0 +1,80 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="masterpages_MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>The Max Foundation</title>
+    <link href="../css/import_all.css" rel="stylesheet" type="text/css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+    <meta name="DC.title" content="The Max Foundation" />
+    <meta name="keywords" content="blood cancer, rare cancer, non-profit, cancer, glivec, cml, all, gist, gipap, tipap, treatment, partnering, international" />
+    <meta name="description" content="Supporting people living with cancer worldwide" />
+    <meta name="company" content="The Max Foundation" />
+    <meta name="copyright" content="The Max Foundation" />
+    <meta http-equiv="content-language" content="en" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <!--[if IE]>
+    <style type="text/css" media="screen">
+    #menu ul li {float: left; width: 100%;}
+    </style>
+    <![endif]-->
+    <!--[if lt IE 7]>
+    <style type="text/css" media="screen">
+    body {
+    behavior: url(css/csshover.htc);
+    font-size: 100%;
+    } 
+    #menu ul li a {height: 1%;}  
+    #menu a, #menu h2 {
+    font: bold 0.7em/1.4em arial, helvetica, sans-serif;
+    }
+    </style>
+    <![endif]-->
+
+    <script type="text/javascript" language="Javascript">
+        //Opens up a new popup window
+        function openNewWindow(URLtoOpen, windowName, windowFeatures) {
+            newWindow = window.open(URLtoOpen, windowName, windowFeatures);
+        }
+    </script>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="container_12">
+        <!-- BEGIN TOP NAVIGATION -->
+        <div id="top_nav" class="grid_12">
+            <ul>
+                <li><a href="http://www.themaxfoundation.org">The Max Foundation Homepage</a></li>
+            </ul>
+        </div>
+        <!-- END TOP NAVIGATION -->
+        <div class="clear">
+        </div>
+        <!-- begin header -->
+        <div id="header" class="grid_12">
+            
+        </div>
+        <!-- end header -->
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        
+        <!-- BEGIN footer -->
+        <div id="footer" class="grid_12">
+            <p class="l">
+                Copyright &copy; 2010 - <a href="http://www.themaxfoundation.org/">The Max Foundation</a>
+                &middot; All Rights Reserved
+            </p>
+            <ul>
+                <li><a href="http://www.themaxfoundation.org/termsofuse/default.aspx">Terms Of Use</a></li>
+                <li><a href="http://www.themaxfoundation.org/privacypolicy/default.aspx">Privacy Policy</a></li>
+                <li><a href="http://www.themaxfoundation.org/webmaster/default.aspx">Webmaster</a></li>
+                <li><a href="http://www.themaxfoundation.org/Default.aspx">Home</a></li>
+            </ul>
+        </div>
+        <!-- END footer -->
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="PATS.master.cs" Inherits="PATS" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>P A T S - The Max Foundation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-874" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="x-ua-compatible" content="IE=10" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="css/StyleSheet.css" rel="stylesheet" type="text/css" />
+    <link href="css/jquery.datepick.css" rel="stylesheet" type="text/css" />
+     <link href="css/notifybar.css" rel="stylesheet" type="text/css" />
+     <link href="css/colorbox.css" rel="stylesheet" type="text/css" />
+             <script type="text/javascript" src="../Scripts/jquery-1.4.1.js"></script>
+            <script type="text/javascript" src="../Scripts/jquery.datepick.js"></script>
+            <script type="text/javascript" src="../Scripts/jquery.colorbox.js"></script>
+            <script type="text/javascript" src="../Scripts/jquery.notifybar.js"></script>
+            <script type="text/javascript" src="../Scripts/PATS.js"></script>
+    <script language="JavaScript">
+<!--
+function openNewWindow(URLtoOpen, windowName, windowFeatures) {
+newWindow=window.open(URLtoOpen, windowName, windowFeatures); }
+//-->
+			</script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div align="center"><div id="Header"><div style="float:right; width:600px; height:100%;"><div style="float:right; width:100%; height:20px; padding-top:5px;">
+        <asp:HyperLink ID="hlGIPAP" runat="server" ForeColor="SteelBlue" Visible="false">GIPAP-NOA</asp:HyperLink>
+&nbsp;
+        <asp:HyperLink ID="hlPINC" runat="server" ForeColor="DeepPink" NavigateUrl="GIPAPTrusted.aspx?reqform=home" Visible="false">PINC</asp:HyperLink>
+&nbsp;
+        <asp:HyperLink ID="hlMYPAP" runat="server" ForeColor="DarkOrange" Visible="false">MYPAP</asp:HyperLink>
+&nbsp;
+        <asp:HyperLink ID="hlTIPAP" runat="server" ForeColor="PURPLE" Visible="false">TIPAP</asp:HyperLink>
+&nbsp;
+        <asp:HyperLink ID="hlRAP" runat="server" ForeColor="#0AB4EA" Visible="false">RAP</asp:HyperLink>
+        </div>
+        <asp:Panel ID="PanelQuickSearch" runat="server">
+        </asp:Panel>
+    </div></div>
+        <div id="menu">
+            <asp:Panel ID="PanelNav" runat="server">
+            </asp:Panel>
+        </div>
+        <div id="ContentPanel">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder></div>
+        <div id="Footer">
+        
+        </div>
+    </div>
+    </form>
+</body>
+</html>

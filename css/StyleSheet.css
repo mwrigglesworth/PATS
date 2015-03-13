@@ -1,0 +1,636 @@
+﻿body 
+{
+	background-image:url("../Images/PageBG.png");
+	background-repeat:repeat-x;
+	font-family:Arial, Verdana; font-size:12pt;
+}
+html,body{height:102%;}
+
+#Header
+{
+	background-image:url("../Images/Header.png");
+	width:940px;
+	height:109px;
+}
+.SearchTxtdiv
+{
+ margin:0;
+ height:18px;
+ width:156px; float:left;
+ background:url("../Images/SearchTxt.png");
+}
+
+.SearchTxt
+{
+ background:none;
+ border:none;
+ width:134px;
+ height:15px;
+ margin:0;
+ font-family:Verdana, Arial, Helvetica, sans-serif;
+ font-size:11px;
+}
+#ContentPanel
+{
+	width:940px;
+	background:white;
+}
+#Footer
+{
+    width:940px; clear:both; height:100px;
+    padding-top:50px;
+    padding-left:10px;
+}
+.FooterCol
+{
+    width:230px; float:left;
+    text-align:left;
+    color:Gray;
+    font-size:9pt;
+}
+.FooterCol h1 
+{
+    color:Gray;
+    font-size:10pt;
+	font-family:Arial, Verdana;
+	font-weight:bold;
+}
+.FooterCol a 
+{
+    color:Gray;
+    text-decoration:none;
+}
+#LeftCol
+{
+    width:310px;
+    float:left;
+    text-align:left;
+    padding-left:10px;
+    padding-top:10px;
+}
+
+#LeftCol p{padding-left:10px;}
+#MainCol
+{
+    width:600px;
+    float:right;
+    padding-top:10px;
+    text-align:left;
+}
+#ControlPanelDiv
+{
+    width:598px;
+    background:url(../Images/ControlPanelBG.png) no-repeat top;
+    background-color:Black;
+    min-height:100px;
+    border-left:1px solid #5A112C;
+    border-right:1px solid #5A112C;
+    clear:both;
+    overflow: hidden; /*for some reason the bg color wont show without this!!! */
+}
+.ControlPanelSplit
+{
+    width:290px;
+    padding-left:8px;
+    float:left;
+}
+#ControlPanelDiv a
+{
+    color:White;
+    font-weight:bold; 
+}
+.ControlPanelDivHeader
+{
+    background:url(../Images/ControlPanelTopLeft.png) no-repeat top left;
+    background-color:#5A112C;
+    width:580px; 
+    float:left;
+    height:24px;
+    color:White;
+    padding-left:5px;
+    padding-top:5px;
+    font-weight:bold;
+    text-align:left;
+}
+.ControlPanelHeaderRight
+{
+    background:url(../Images/ControlPanelTopRight.png) no-repeat top right;
+    background-color:#5A112C;
+    width:10px;
+    height:24px;
+    float:left;
+    padding-left:5px;
+    padding-top:5px;
+}
+.FormDiv
+{
+    border:1px solid #5A112C;
+}
+.ControlPanelDivFooter
+{
+    background:url(../Images/ControlPanelBottomLeft.png) no-repeat bottom left;
+    background-color:Black;
+    width:580px; 
+    float:left;
+    height:15px;
+    color:White;
+    padding-left:5px;
+    padding-top:5px;
+    font-weight:bold;
+    text-align:left;
+}
+.ControlPanelFooterRight
+{
+    background:url(../Images/ControlPanelBottomRight.png) no-repeat bottom right;
+    background-color:Black;
+    width:10px;
+    height:15px;
+    float:left;
+    padding-left:5px;
+    padding-top:5px;
+}
+.SAEDiv
+{
+    width:580px;
+    background-color:#EEEEEE;
+    text-align:left;
+    font-size:10pt;    
+    color:Gray;
+    border:1px solid #5A112C;
+    padding:5px;
+    overflow: hidden; /*for some reason the bg color wont show without this!!! */
+
+}
+.PersonelDiv
+{
+    width:600px;
+    background-color:#EEEEEE;
+    text-align:left;
+    font-size:10pt;    
+    overflow: hidden; /*for some reason the bg color wont show without this!!! */
+
+}
+.lbAR
+{
+    color:#5A112C;
+}
+.PersonelCol
+{
+    width:190px;/*smaller than 200 bc of the padding*/
+    float:left;
+    padding:5px;
+    color:Gray;
+}
+.PersonelColPhy
+{
+    width:290px;/*smaller than 200 bc of the padding*/
+    float:left;
+    padding:5px;
+}
+.PersonelUpdateDiv
+{
+    width:580px;
+    border:1px solid steelblue;
+    background:url(../Images/FormBG.png) repeat-x top;
+    padding:5px;
+    text-align:left;
+    font-size:10pt;    
+    overflow: hidden; /*for some reason the bg color wont show without this!!! */
+
+}
+.FormTable
+{
+    border:1px solid steelblue;
+    background:url(../Images/FormBG.png) repeat-x top;
+}
+h1
+{
+    font-family:Georgia; font-size:16pt; color:gray; font-weight:normal;
+}
+h2
+{
+    font-family:Georgia; font-size:16pt; color:White; font-weight:normal;
+}
+h3
+{
+    color:Gray; font-size:10pt; font-weight:bold;
+}
+.LeftColSpacer
+{
+    min-height:30px;
+    clear:both;
+    padding-bottom:5px;
+    padding-top:5px;
+    font-size:12pt;
+}
+.LeftColDivHeader
+{
+    background:url(../Images/DivTopRight.png) no-repeat top right;
+    background-color:#CCCED3;
+    height:24px;
+    clear:both;
+    color:Gray;
+    padding-left:5px;
+    padding-top:5px;
+    font-weight:bold;
+}
+.LeftColDiv
+{
+    background:url(../Images/DivBottom.png) repeat-x bottom;
+    min-height:200px;
+    border-right:1px solid #CCCED3;
+    border-left:1px solid #CCCED3;
+    padding:5px;
+}
+
+.MainColDivHeader
+{
+    background:url(../Images/DivTopLeft.png) no-repeat top left;
+    background-color:#CCCED3;
+    width:580px; 
+    float:left;
+    height:24px;
+    color:Gray;
+    padding-left:5px;
+    padding-top:5px;
+    font-weight:bold;
+}
+.MainColDivHeaderRight
+{
+    background:url(../Images/DivTopRight.png) no-repeat top right;
+    background-color:#CCCED3;
+    width:10px;
+    height:24px;
+    float:left;
+    padding-left:5px;
+    padding-top:5px;
+}
+.MainColDiv
+{
+    border:1px solid #CCCED3;
+    background-color:#F7F3F3;
+    width:588px;
+    padding:5px;
+    overflow: hidden;
+    clear:both;
+}
+.MainColDivider
+{
+    width:290px; float:left;
+}
+.FullPageListDivHeader
+{
+    background:url(../Images/DivTopLeft.png) no-repeat top left;
+    background-color:#CCCED3;
+    width:920px; 
+    float:left;
+    height:24px;
+    color:Gray;
+    padding-left:5px;
+    padding-top:5px;
+    font-weight:bold;
+}
+.FullPageListDivHeaderRight
+{
+    background:url(../Images/DivTopRight.png) no-repeat top right;
+    background-color:#CCCED3;
+    width:10px;
+    height:24px;
+    float:left;
+    padding-left:5px;
+    padding-top:5px;
+}
+.FullPageListDiv
+{
+    border:1px solid #CCCED3;
+    background-color:#F7F3F3;
+    width:928px;
+    padding:5px;
+}
+/*queue divs */
+.ProgressDiv
+{
+    width: 100%; background-color: White; position:absolute; left:0; top:0; height:100%; text-align:center; z-index:-1;
+}
+.QueueDiv
+{
+    background-color:#F7F3F3;
+    width:928px;
+    padding:5px;
+    border:1px solid #5A112C;
+    clear:both;
+    position:relative;
+}
+.QueueDivHeader
+{
+    background:url(../Images/ControlPanelTopLeft.png) no-repeat top left;
+    background-color:#5A112C;
+    width:920px; 
+    float:left;
+    height:24px;
+    color:White;
+    padding-left:5px;
+    padding-top:5px;
+    font-weight:bold;
+    text-align:left;
+}
+.QueueHeaderRight
+{
+    background:url(../Images/ControlPanelTopRight.png) no-repeat top right;
+    background-color:#5A112C;
+    width:10px;
+    height:24px;
+    float:left;
+    padding-left:5px;
+    padding-top:5px;
+}
+
+.MessageDivHeader
+{
+    background:url(../Images/ControlPanelTopLeft.png) no-repeat top left;
+    background-color:#5A112C;
+    width:920px; 
+    float:left;
+    height:24px;
+    color:White;
+    padding-left:5px;
+    padding-top:5px;
+    font-weight:bold;
+    text-align:left;
+}
+.MessageHeaderRight
+{
+    background:url(../Images/ControlPanelTopRight.png) no-repeat top right;
+    background-color:#5A112C;
+    width:10px;
+    height:24px;
+    float:left;
+    padding-left:5px;
+    padding-top:5px;
+}
+.MessageDiv
+{
+    background-color:#F7F3F3;
+    width:928px;
+    padding:5px;
+    border:1px solid #5A112C;
+    clear:both;
+    position:relative;
+}
+.roundbutton
+{      	
+       	padding:5px;
+       	cursor:pointer;
+       	text-align:center;
+       	 -moz-border-radius: 10px;
+       	 -webkit-border-radius: 10px;
+         -khtml-border-radius: 10px;
+         border-radius: 15px;
+	}
+/*end queue divs*/
+.AlertDiv
+{
+    border:1px solid maroon;
+    background-color:khaki;
+    color:Maroon;
+    padding:5px;
+    width:100%;
+}
+li {list-style-position: inside;}
+.NOABox
+{
+    border:1px solid green;
+    background:url(../Images/DivBottom.png) repeat-x bottom;
+    padding:5px;
+}
+.NOAGIPAPBox
+{
+    border:1px solid maroon;
+    background:url(../Images/DivBottom.png) repeat-x bottom;
+    padding:5px;
+}
+.lbl
+{
+    color:Gray;
+}
+.blb
+{
+    color:Black;
+}
+#Nav
+{
+	background-image:url("../Images/NavBar.png");
+	width:940px;
+	height:43px;
+}
+.Subtext
+{
+	color:gray; font-size:10pt;
+}
+/*ajax stuff*/
+.ajax__calendar_container {padding:4px;position:absolute;cursor:default;width:170px;font-size:11px;text-align:center;font-family:tahoma,verdana,helvetica;}
+.ajax__calendar_body {height:139px;width:170px;position:relative;overflow:hidden;margin:auto;}
+.MyCalendar .ajax__calendar_container {
+    border:1px solid #646464;
+    background-color: gainsboro;
+    color: steelblue;
+}
+.ajax__tab_default .ajax__tab_header {white-space:nowrap; background-color:gray; color:Navy;}
+.ajax__tab_default .ajax__tab_outer {display:-moz-inline-box;display:inline-block; border-right:solid 1px white;}
+.ajax__tab_default .ajax__tab_inner {display:-moz-inline-box;display:inline-block}
+.ajax__tab_default .ajax__tab_tab {overflow:hidden;text-align:center;cursor:pointer;display:-moz-inline-box;display:inline-block; padding-left:3px; padding-right:3px;}
+.ajax__tab_default .ajax__tab_active {background-color:gainsboro; font-weight:bold; color:steelblue; border-top:solid 1px steelblue; border-left:solid 1px steelblue; border-right:solid 1px steelblue; padding-left:3px; padding-right:3px;}
+.ajax__tab_default .ajax__tab_body{background-color:gainsboro; padding:4px; border-bottom:solid 1px steelblue; border-left:solid 1px steelblue; border-right:solid 1px steelblue;}
+
+.collapsePanel {
+	
+	overflow:hidden;
+}
+.collapsePanelHeader{
+	width:600px;
+	height:35px;
+	color:white;
+	font-weight:bold;
+	cursor:pointer;
+}
+.collapsePanelHeaderAddy{
+	width:280px;
+	height:16px;
+	color:white;
+	font-weight:bold;
+	cursor:pointer;
+}
+/*NAV STUFF*/
+
+#menu {
+background-image:url("../Images/NavBar.png");
+	width:940px;
+	height:43px;
+}
+ 
+#menu ul {
+list-style: none;
+margin: 0;
+padding: 0;
+float:left;
+position: relative;
+
+}
+ 
+#menu a{
+display: block;
+font:normal 13pt Arial; 
+margin: 0;
+height:32px;
+padding: 5px 5px;
+color: #fff;
+text-decoration: none;
+}
+ 
+#menu ul .Dashboard 
+{
+    font-size:12pt;
+    color:gainsboro;
+}
+#menu ul .Queues 
+{
+    color:gainsboro;
+}
+ 
+#menu ul:hover{
+background-color:Black; 
+}
+ 
+#menu li {position: relative;}
+ 
+#menu ul ul {
+position: absolute;
+z-index: 1000;
+width:200px;
+border:1px solid Black;
+background:url(../Images/liBG.png) repeat-x bottom;
+background-color:Black; 
+clear:both;
+}
+#menu ul li .Region {
+width:800px;
+}
+#menu ul li .Region a {
+height:15px;
+}
+#menu ul li .leftcol {
+float:left;
+width:200px;
+}
+
+#menu ul ul a 
+{
+font:normal 10pt Arial;
+text-align:left;
+color:white;
+}
+#menu ul ul a:hover 
+{
+font-weight:bold; color:white;
+}
+
+ 
+div#menu ul ul,
+div#menu ul li:hover ul ul,
+div#menu ul ul li:hover ul ul
+{display: none; }
+ 
+div#menu ul li:hover ul,
+div#menu ul ul li:hover ul,
+div#menu ul ul ul li:hover ul
+{display: block;}
+
+
+#passwordStrength
+
+{
+
+        height:10px;
+
+        display:block;
+
+        float:left;
+
+}
+
+
+
+.strength0
+
+{
+
+        width:250px;
+
+        background:#cccccc;
+
+}
+
+
+
+.strength1
+
+{
+
+        width:50px;
+
+        background:#ff0000;
+
+}
+
+
+
+.strength2
+
+{
+
+        width:100px;    
+
+        background:Yellow;
+
+}
+
+
+
+.strength3
+
+{
+
+        width:150px;
+
+        background:Orange;
+
+}
+
+
+
+.strength4
+
+{
+
+        background:#4dcd00;
+
+        width:200px;
+
+}
+
+
+
+.strength5
+
+{
+
+        background:#399800;
+
+        width:250px;
+
+}
+
+.hideGridColumn
+    {
+        display:none;
+    }

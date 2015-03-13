@@ -1,0 +1,644 @@
+﻿* {
+	margin: 0; padding: 0;
+}
+body {
+	/**font-family: Verdana, Arial, sans-serif;**/
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+	letter-spacing:.06em;
+	color: #6c6f70;
+	background: #EEEEEE;
+	behavior:url(css/csshover2.htc);
+}
+a {
+	color: #005D6F;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+	color: #EB5724;
+}
+img {
+	border: 0;
+}
+.break {
+	font-size: 0;
+	width: 0; height: 0;
+	clear: both;
+}
+.alignleft_no_indent {
+	float: left;
+	margin: 4px 10px 5px 0;
+}
+.alignleft {
+	float: left;
+	margin: 4px 10px 5px 0;
+}
+.alignright {
+	float: right;
+	margin: 4px 0 5px 10px;
+}
+.aligncenter {
+	text-align: center;
+}
+.hidden {
+	display: none;
+}
+.clearall
+{
+    clear:both;
+}
+hr {
+     border:0;
+     color:#DDDDDD;
+     background:#DDDDDD;
+     height:1px;
+     margin-top:10px;
+     margin-bottom:10px;
+ }
+
+
+/** BEGIN header **/
+#header 
+{
+	height: 100px;
+	margin-bottom: 10px;
+	overflow: hidden;
+	background-color:#fff;
+	background:url(../images/Header1.png) no-repeat center 0;
+}
+#header img
+{
+    float:left; 
+    margin: 0 .3em .3em 0;
+}
+#header #PatsLogin
+{
+    position:relative;
+    top:0px;
+    left:780px;
+}
+#header ul
+{
+    position:relative;
+    top:6px;
+    left:800px;
+}
+#header li 
+{
+    list-style-type: none;
+    font-size: 1.6em;
+    padding-bottom:15px;
+}
+#header li a {
+	color: #FFF;
+	text-decoration: none;
+}			
+#header li a:hover {
+	color: #4A79A5;
+}		
+/** END header **/
+
+/** BEGIN sidebars **/
+.box {
+    line-height: 1.3em;
+	background-color: #FFFFFF;
+	border: 1px solid #DDDDDD;
+	padding: 6px;
+	margin-bottom: 10px;
+}
+.box h2 {
+	background-color: #9A9B9D; /** container header color **/
+	color: #ffffff;
+	font-size: 1.3em;
+	letter-spacing:.05em;
+	text-transform: none;
+	padding: 10px;
+	margin-bottom: 5px;
+}
+#Loginbox {
+    background-color:#FFFFFF;
+	position: relative;
+	border: 1px solid #DDDDDD;
+	margin-bottom:10px;
+	line-height:1.3em;
+	color:#5A92A6;
+}
+#Loginbox h2 {
+	background-color: #5A92A6; /** container header color **/
+	color: #fff;
+	font-size: 1.0em;
+	text-transform: uppercase;
+	padding: 4px;
+	margin-bottom: 5px;
+}
+#Loginbox .logtext
+{
+	width:270px;
+	height:20px;
+	border:1px solid #5A92A6;
+}
+#Loginbox .passwordtext
+{
+	color:#5A92A6;
+}
+#Loginbox .passwordtext H1
+{
+	font-size:14px;
+}
+.loginbutton
+{
+	position:absolute;
+	bottom:5px;
+}
+#rsidebar {
+	padding-bottom: 10px;
+}
+#rsidebar .ads {
+	padding: 0 7px;
+	text-align: center;
+}
+#rsidebar .ads img {
+	margin: 7px;
+}
+#rsidebar ul {
+	list-style-type: none;
+	padding: 5px 8px;
+}
+#rsidebar ul li {
+	line-height: 1.4em;
+	padding: 5px 0;
+}
+#rsidebar ul li a {
+	font-weight: bold;
+}
+#rsidebar ul li p {
+	padding-top: 5px;
+}
+/** END sidebars **/
+
+/** BEGIN Main Picture **/
+#FrontPicture{
+	position: relative;
+	padding: 0 0 10px 0;
+}
+#FrontPicture .MaxMainPage
+{
+    position:absolute;
+    top:25px;
+    left:300px;
+    width:300px;
+    font-size:1.4em;
+    line-height:1.3em;
+}
+/** End Main Picture **/
+
+/** BEGIN projects **/
+#projects
+{
+    background-color:#FFFFFF;
+	position: relative;
+	margin-bottom:10px;
+	line-height:1.3em;
+}
+#projects h3
+{
+    font-size: 2em;
+    color: #5A92A6;
+	margin-bottom: 10px;
+	font-weight: normal;
+	padding: 10px 0 0 10px;
+}
+#projects img,p
+{
+    padding-left:10px;
+    padding-bottom:10px;
+}
+
+#projects img
+{
+    width:280px;
+}
+
+/** End projects **/
+
+/** BEGIN content **/
+#center_content {
+	padding: 0;
+}
+#center_content .featured 
+{
+	position: relative;
+	padding: 0px;
+}
+
+#center_content .featured h3 {
+	font-size: 1.8em;
+	margin-bottom: 10px;
+	font-weight: normal;
+	padding: 0px;
+}
+
+#center_content .featured p {
+	line-height: 1.4em;
+	margin-bottom: 10px;
+	padding: 0 4px;
+}
+#center_content .featured .details {
+	clear: both;
+	text-transform: uppercase;
+	font-size: 0.8em;
+	margin-bottom: 0;
+}
+#center_content .featured .details a {
+	color: #333333;
+	text-decoration: none;
+}
+#center_content .featured .details a:hover {
+	color: #4A79A5;
+	text-decoration: underline;
+}
+#center_content .recent 
+{
+    position:relative;
+	background-color: #FFFFFF;
+	border: 1px solid #DDDDDD;
+	padding: 6px;
+	margin-bottom: 10px;
+}
+
+#center_content .post {
+	position: relative;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+#center_content .recent h2 {
+	background-color: #5A92A6;
+	color: #ffffff;
+	font-size: 1em;
+	text-transform: uppercase;
+	padding: 5px;
+	margin-bottom: 5px;
+}
+#center_content .post .comments a {
+	position: absolute;
+	display: block;
+	width: 31px; height: 25px;
+	background: url(images/comments.gif) no-repeat 0 0;
+	top: 10px; right: 10px;
+	text-align: center;
+	font-size: 0.8em;
+	color: #333333;
+	text-decoration: none;
+	padding-top: 5px;
+}
+#center_content .post h3 {
+	font-size: 2em;
+	line-height: 1em;
+	color: #5A92A6;
+	margin-bottom: 10px;
+	font-weight: normal;
+	padding: 0 50px 0 4px;
+}
+
+#center_content .post h4 {
+	font-size: 1.4em;
+	line-height: 1.2em;
+	color: #EB5724;
+	margin-bottom: 10px;
+	font-weight: normal;
+	padding: 0 5px 0 4px;
+}
+/**#center_content .post img {
+	float: left;
+	margin: 5px 10px 10px 4px;
+	width: 134px;
+}**/
+#center_content .post .fullscreenimage {
+	float: left;
+	margin: 5px 10px 10px 0px;
+	width: 100%;
+}
+#center_content .post p {
+	line-height: 1.4em;
+	margin-bottom: 10px;
+	padding: 0 4px;
+}
+#center_content .post ul 
+{
+    padding-bottom:15px;
+    padding-left:28px;
+	list-style-type: disc;
+}
+#center_content .post ul li {
+	line-height: 1.4em;
+	padding: 5px 0;
+}
+#center_content .post ol 
+{
+    padding-bottom:15px;
+    padding-left:28px;
+	list-style-type: decimal;
+}
+#center_content .post ol li {
+	line-height: 1.4em;
+	padding: 5px 0;
+}
+#center_content .post .details {
+	clear: both;
+	text-transform: uppercase;
+	font-size: 0.8em;
+	padding:0;
+	margin-bottom: 0;
+}
+#center_content .post .details a {
+	color: #333333;
+	text-decoration: none;
+}
+#center_content .post .details a:hover {
+	color: #4A79A5;
+	text-decoration: underline;
+}
+#center_content .postnav {
+	clear: both;
+	padding: 10px 0;
+}
+#center_content .postnav ul {
+	list-style-type: none;
+	padding: 10px;
+}
+#center_content .postnav ul li {
+	float: left;
+	color: #B5B4BC;
+	padding: 4px;
+}
+#center_content .postnav ul li a {
+	color: #636363;
+	text-decoration: none;
+	display: block;
+	padding: 2px 6px;
+	border: 1px solid #E2E2E2;
+}
+#center_content .postnav ul li a:hover {
+	border-color: #ffffff;
+}
+#wp_page_numbers ul {
+	border-top: 0 !important;
+}
+#wp_page_numbers .page_info {
+	padding: 3px 6px !important;
+	margin-right: 2px;
+	border: 1px solid #e0e0e0 !important;
+	margin-top: 4px;
+}
+#wp_page_numbers .active_page a {
+	background-color: #ffffff !important;
+	border: 0 !important;
+}
+/** END content **/
+
+/** BEGIN site navigation **/
+#sitenav {
+	background-color: #B0D4EF;	
+	height: 220px;
+	margin-bottom: 10px;
+	padding: 0px;
+}
+#sitenav .listing {
+	padding:10px;
+}
+#sitenav h3 {
+	font-size: 1.8em;
+	color:#09497A;
+	padding:10px;
+	font-weight: normal;
+}
+#sitenav ul 
+{
+    padding-right:0px;
+    padding-bottom:10px;
+	list-style-type: none;
+}
+#sitenav ul li 
+{
+    font-size: 1em;
+	line-height: 1.4em;
+	
+}
+/** END site navigation **/
+
+/** BEGIN footer **/
+#footer {
+	background-color: #5A92A6;
+	color: #fff;
+	font-size: 1em;
+	height: 35px;
+	padding-top: 20px;
+}
+#footer a {
+    color: #ffffff;
+}
+#footer a:hover {
+	text-decoration: none;
+	color: #C2C0B4;
+}
+#footer .l {
+	float: left;
+	margin-left:15px;
+}
+#footer .r {
+	float: right;
+}
+#footer li {
+    list-style-type: none;
+	float: right;
+    text-transform: uppercase;
+}
+#footer li a 
+{
+    margin-right:30px;
+}
+
+/** END footer **/
+
+/** BEGIN miscellaneous **/
+#content .single {
+	padding: 2px;
+}
+	#content .single p {
+		line-height: 1.5em;
+		margin-bottom: 10px;
+	}
+	#content .single ul, #content .single ol {
+		list-style-position: inside;
+		margin-bottom: 10px;
+	}
+	#content .single li {
+		line-height: 1.5em;
+		padding: 2px 0;
+	}
+	#content .single blockquote {
+		padding: 10px 10px 5px;
+		margin-bottom: 10px;
+
+		background-color: #eeeeee;
+		border-width: 1px 0;
+		border-style: solid;
+		border-color: #e0e0e0;
+	}
+	#content .single h3, #content .single h4, #content .single h5, #content .single h6 {
+		font-size: 1.2em;
+		margin-bottom: 5px;
+	}
+#comments {
+	padding: 2px;
+}
+	#comments a {
+		text-decoration: none;
+	}
+	#comments h2 {
+		font-size: 1.6em;
+		margin: 10px 0;
+	}
+	#comments p {
+		margin-bottom: 10px;
+		line-height: 1.6em;
+	}
+	#comments form {
+		
+	}
+	#comments form p {
+		margin-bottom: 5px;
+	}
+		#comments form input {
+			margin-right: 5px;
+		}
+		#comments form input, textarea {
+			border: 1px solid #cccccc;
+			font-size: 0.9em;
+			font-family: Verdana;
+			padding: 4px;
+			background-position: 4px 4px;
+			background-repeat: no-repeat;
+		}
+		#comments form input {
+			width: 240px;
+			border: 1px solid #cccccc;
+		}
+		#comments form textarea {
+			width: 350px;
+			padding: 4px 4px !important;
+			border: 1px solid #cccccc;
+		}
+		#comments form button {
+			border: 1px solid #a0a0a0;
+			font-size: 1em;
+			font-family: Verdana;
+			padding: 2px 6px;
+		}
+	.commentdetails {
+		margin-top: 25px;
+	}
+	.commentauthor {
+		margin-bottom: 5px !important;
+		font-weight: bold;
+	}
+	.commentdate {
+		font-size: 0.8em;
+		margin-bottom: 5px;
+		color: #909090;
+	}
+	.required {
+		color: #ff0000;
+	}
+h2.title {
+	font-size: 1em !important;
+	text-transform: uppercase;
+	padding: 10px;
+	color: #565656;
+}
+.notfound {
+	padding: 40px;
+}
+	.notfound h2 {
+		font-size: 18px;
+		font-weight: normal;
+		margin-bottom: 10px;
+	}
+
+/** END miscellaneous **/
+
+
+#comments ol {
+	list-style-type: none;
+	clear: both;
+	padding: 0;
+	margin: 0;
+}
+	#comments .buffer {
+		padding: 10px;
+	}
+	#comments ol li {
+		margin-bottom: 10px;
+	}
+	#comments ol li ul li {
+		border: 1px solid #e0e0e0;
+		padding: 10px;
+	}
+	#comments ol li .avatar {
+		float: right;
+	}
+	#comments ol li .comment-author {
+		
+	}
+		#comments ol li .comment-author .fn {
+			font-weight: bold;
+			font-size: 1.2em;
+		}
+	#comments ol li .comment-meta {
+		font-size: 0.9em;
+		color: #999999;
+		margin: 5px 0 10px;
+	}
+	#comments ol li .reply {
+		font-size: 0.9em;
+		font-weight: bold;
+		padding-bottom: 10px;
+	}
+	#comments .children {
+		list-style-type: none;
+	}
+#comments .navigation {
+	padding: 0 0 40px;
+	font-size: 0.9em;
+}
+	#comments .navigation a {
+		color: #999999;
+		padding: 3px 8px;
+		border: 1px solid #cccccc;
+	}
+	#comments .navigation a:hover {
+		color: #000000;
+		border-color: #000000;
+		text-decoration: none;
+	}
+#comments .says {
+	display: none;
+}
+
+/* Custom Icons */
+.addthis_toolbox .custom_images a 
+{    
+    width: 64px;    
+    height: 64px;    
+    margin: 0;    
+    padding: 0;
+}
+.addthis_toolbox .custom_images a img 
+{    
+    opacity: 1.0;
+}
+.addthis_toolbox .custom_images a:hover img 
+{    
+    opacity: 0.75;
+}       

@@ -1,0 +1,27 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/PATS.master" AutoEventWireup="true" CodeFile="GIPAPPerson.master.cs" Inherits="Person_GIPAPPerson" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+</asp:ScriptManager>
+<div id="LeftCol">
+    <asp:Label ID="LabelPersonInfo" runat="server" Text=""></asp:Label>
+    <asp:Panel ID="PanelFullInfo" runat="server">
+    <div class='LeftColDivHeader'><asp:Label ID="LabelSummaryHeader" runat="server" Text=""></asp:Label></div>
+    <div class='LeftColDiv'>
+        <asp:Label ID="LabelSummary" runat="server" Text=""></asp:Label><br /><br />
+        <asp:Label ID="LabelUser" runat="server" Text=""></asp:Label><br /><br />
+        <asp:LinkButton ID="lbUser" runat="server" Visible="false" 
+            onclick="lbUser_Click">Create User Profile</asp:LinkButton>
+    </div>
+    </asp:Panel>
+</div>
+<!-- end left col -->
+    <div id="MainCol">
+        <asp:ContentPlaceHolder id="ContentPlaceHolderControlPanel" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+</asp:Content>
+
