@@ -168,7 +168,7 @@ namespace GIPAP_Objects
             {
                 try
                 {
-                  smtpClient.Send(mailMessage);
+                  //smtpClient.Send(mailMessage);
                 }
                 catch (Exception ex)
                 {

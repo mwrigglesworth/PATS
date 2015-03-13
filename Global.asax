@@ -16,8 +16,8 @@
         
     void Application_Error(object sender, EventArgs e) 
     {
-        Session["sessError"] = Server.GetLastError().GetBaseException().Message;
-        Server.Transfer("../PATS/Error/DefaultError.aspx");
+        /*Session["sessError"] = Server.GetLastError().GetBaseException().Message;
+        Server.Transfer("../PATS/Error/DefaultError.aspx");*/
     }
 
     void Session_Start(object sender, EventArgs e) 
